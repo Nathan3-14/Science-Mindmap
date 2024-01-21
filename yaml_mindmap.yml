@@ -9,12 +9,10 @@ Electricity:
       - charge (C) = current (A) * time (s)
       - current (A) = charge (C) / time (s)
   Circuit Symbols:
-    - Battery
-    - Cell
-    - Switch
-  i--:
-    Scene1:
-      - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene1.png?raw=true
-    Scene2:
-      - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene2.png?raw=true
-  
+    i--:
+      Battery:
+        - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/battery.png?raw=true
+      Cell:
+        - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/cell.png?raw=true
+      Switch:
+        - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/switch.png?raw=true
