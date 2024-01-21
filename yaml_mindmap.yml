@@ -13,5 +13,8 @@ Electricity:
     - Cell
     - Switch
   i--:
-    - ./test_img.png
+    Scene1:
+      - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene1.png?raw=true
+    Scene2:
+      - https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene2.png?raw=true
   

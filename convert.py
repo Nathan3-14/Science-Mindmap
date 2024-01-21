@@ -9,8 +9,8 @@ def parse_mindmap_dict_for_file(mindmap_dict: dict, max_recursion_limit: int=5, 
         return
     for key, value in mindmap_dict.items():
         if key == "i--": #? image code
-            for image in value:
-                add_to_file("output.md", f"{'#'*(level)} ![]({image})")
+            for image_name, image_data in value.items():
+                add_to_file("output.md", f"{'#'*(level)} ![alt text]({image_data[0]}) {image_name}")
             continue
 
 

@@ -12,4 +12,5 @@
 ### Battery
 ### Cell
 ### Switch
-## ![](https://github.com/Nathan3-14/images/blob/main/test_img.png)
+## ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene1.png?raw=true) Scene1
+## ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/scene2.png?raw=true) Scene2
