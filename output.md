@@ -11,4 +11,7 @@
 ## Circuit Symbols
 ### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/battery.png?raw=true) Battery
 ### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/cell.png?raw=true) Cell
+### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/diode.png?raw=true) Diode
+### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/lamp.png?raw=true) Lamp
+### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/led.png?raw=true) LED
 ### ![alt text](https://github.com/Nathan3-14/Science-Mindmap/blob/main/images/switch.png?raw=true) Switch
