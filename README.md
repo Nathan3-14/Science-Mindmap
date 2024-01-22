@@ -7,14 +7,15 @@
 
 ## Formatting
 ```yaml
-1:
-    A:
-        - I
-        - II
-    B:
-        - I
-        - II
-    C:
+Main:
+    Sub Item A:
+        Sub Item I
+        Sub Item II
+    Sub Item B:
+        Sub Item I
+        Sub Item II:
+            - Sub Item V
+    Sub Item C:
         i--: #? image
             Image name 1:
                 - Image link 1
