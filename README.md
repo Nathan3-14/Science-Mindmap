@@ -9,11 +9,11 @@
 ```yaml
 Main:
     Sub Item A:
-        Sub Item I
-        Sub Item II
+        - Sub Item I
+        - Sub Item II
     Sub Item B:
-        Sub Item I
-        Sub Item II:
+        - Sub Item I
+        - Sub Item II:
             - Sub Item V
     Sub Item C:
         i--: #? image

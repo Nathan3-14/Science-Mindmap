@@ -1,4 +1,5 @@
 import yaml
+import sys
 
 def add_to_file(file_path: str, line: str) -> None:
     with open(file_path, "a") as f:
@@ -38,11 +39,11 @@ output_file_path = ""
 def convert_file(input_file_path: str, output_file_path_a: str="output.md"): #? _a is argument
     global output_file_path
     output_file_path = output_file_path_a
+    print(output_file_path)
 
-    mindmap_dict = read_yaml(file_path)
+    mindmap_dict = read_yaml(input_file_path)
     open(output_file_path, "w")
-    parse_mindmap_fict_for_file(mindmap_dict)
+    parse_mindmap_dict(mindmap_dict)
 
 if __name__ == "__main__":
-
-    convert_file("./test/yaml_mindmap.yml", "./test/output.md")
+    convert_file(sys.argv[1], sys.argv[2])
