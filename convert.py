@@ -44,8 +44,5 @@ def convert_file(input_file_path: str, output_file_path_a: str="output.md"): #? 
     parse_mindmap_fict_for_file(mindmap_dict)
 
 if __name__ == "__main__":
-    # mindmap_dict = read_yaml("yaml_mindmap.yml")
 
-    # open("output.md", "w")
-    # parse_mindmap_dict(mindmap_dict)
-    convert_file("yaml_mindmap.yml")
+    convert_file("./test/yaml_mindmap.yml", "./test/output.md")
