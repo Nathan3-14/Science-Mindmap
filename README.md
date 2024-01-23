@@ -3,7 +3,7 @@
 ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515)
 
 ## Instructions
-- Add the python file to the directory containing your yaml
+- Add the python file to the directory containing your yaml or json 
 
 ## Formatting
 ```yaml
@@ -22,4 +22,27 @@ Main:
             Image name 2:
                 - Image link 2
             
+```
+```json
+"Main": {
+    "Sub Item A": [
+        "Sub Item I",
+        "Sub Item II"
+    ],
+    "Sub Item B": [
+        "Sub Item I",
+        "Sub Item II": [
+        ]
+    ]
+    "Sub Item C": {
+        "i--": {
+            "Image name 1": [
+                "Image link 1"
+            ],
+            "Image name 2": [
+                "Image link 2"
+            ]
+        }
+    }
+}         
 ```
