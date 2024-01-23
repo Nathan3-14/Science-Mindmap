@@ -1,5 +1,7 @@
+import json
 import yaml
 import sys
+import os
 
 def add_to_file(file_path: str, line: str) -> None:
     with open(file_path, "a") as f:
@@ -27,6 +29,10 @@ def parse_mindmap_dict(mindmap_dict: dict, max_recursion_limit: int=5, level: in
 
 
 
+def read_json(file_path: str) -> dict:
+    with open(file_path, "r") as f:
+        return json.loads(f.read())
+
 def read_yaml(file_path: str) -> dict:
     with open(file_path, "r") as f:
         try:
@@ -39,11 +45,25 @@ output_file_path = ""
 def convert_file(input_file_path: str, output_file_path_a: str="output.md"): #? _a is argument
     global output_file_path
     output_file_path = output_file_path_a
-    print(output_file_path)
 
-    mindmap_dict = read_yaml(input_file_path)
+    # match input_file_path.split(".")[-1]
+    mindmap_dict = {}
+    if not os.path.exists(input_file_path):
+        raise Exception (f"\n  Invalid file_path\n  {input_file_path} does not exist")
+    if input_file_path.split(".")[-1] == ".json":
+        mindmap_dict = read_json(input_file_path) 
+    else:
+        mindmap_dict = read_yaml(input_file_path)
     open(output_file_path, "w")
     parse_mindmap_dict(mindmap_dict)
 
+
+
 if __name__ == "__main__":
-    convert_file(sys.argv[1], sys.argv[2])
+    error = False
+    try:
+        convert_file(sys.argv[1], sys.argv[2])
+    except IndexError:
+        error = True
+    if error:
+        raise Exception (f"\n  Invalid arguments.\n  Expected [<input_file_path>, <output_file_path>] but recieved {sys.argv[1:]}")
